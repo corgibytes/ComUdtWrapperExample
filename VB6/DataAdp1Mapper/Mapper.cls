@@ -12,9 +12,36 @@ Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = True
 
-'Translate the UDT KeyToken in the DataAdp1Udt project to a class.
-'This assumes you can't change the UDT in the DataAdp1Udt project to
-'class.
+'Translate all the UDT KeyTokens (defined in the DataAdp1Udt project)
+'in the collection to a VB6 class.  UDTs, or structs in .NET, can't
+'cross the COM boundry to .NET but classes can.
+'
+'For example, the following code will raise in error .NET:
+'
+'  'Get collection of UDTs from VB6 COM
+'  Dim adapter = New DataAdp1Udt.Adapter
+'  adapter.ExtractKeys(vbCollection)
+'
+'  'If you try to access a UDT from the collection
+'  'an error will be raised.
+'  Dim keyToken = vbCollection(0)
+'
+'If you need to access the items in the collection you need to
+'transfer it from a UDT to a VB6 class so it can transfer over
+'COM:
+'
+'  'Get collection of UDTs from VB6 COM
+'  Dim adapter = New DataAdp1Udt.Adapter
+'  adapter.ExtractKeys(vbCollection)
+'
+'  'Translate the UDTs to VB6 classes.
+'  Dim mapper As New DataAdp1Mapper.Mapper
+'  Dim mappedCollection = mapper.UdtToClass(vbCollection)
+'
+'  'Now you can access the items in the collection.
+'  Dim keyToken = mappedCollection(0)
+'  Console.WriteLine(keyToken.Value)
+'
 Public Function UdtToClass(ByRef source As Collection) As Collection
 
     'This collection will contain the wrapper class.

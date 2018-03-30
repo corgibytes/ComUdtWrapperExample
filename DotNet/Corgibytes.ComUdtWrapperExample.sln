@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Corgibytes.ComExample.DataAdapter1Udt", "Corgibytes.ComExample.DataAdapter1Udt\Corgibytes.ComExample.DataAdapter1Udt.vbproj", "{B109618C-F7BF-44B4-A080-4D5FADC6A345}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Corgibytes.ComUdtWrapperExample.DataAdapter1Udt", "Corgibytes.ComUdtWrapperExample.DataAdapter1Udt\Corgibytes.ComUdtWrapperExample.DataAdapter1Udt.vbproj", "{B109618C-F7BF-44B4-A080-4D5FADC6A345}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Corgibytes.ComExample.DesktopClient", "Corgibytes.ComExample.DesktopClient\Corgibytes.ComExample.DesktopClient.vbproj", "{F3DCFE22-CFA2-432D-B603-C596E533518D}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Corgibytes.ComUdtWrapperExample.DesktopClient", "Corgibytes.ComUdtWrapperExample.DesktopClient\Corgibytes.ComUdtWrapperExample.DesktopClient.vbproj", "{F3DCFE22-CFA2-432D-B603-C596E533518D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

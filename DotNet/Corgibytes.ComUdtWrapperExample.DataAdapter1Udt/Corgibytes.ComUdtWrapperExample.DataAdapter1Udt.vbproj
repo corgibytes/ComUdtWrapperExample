@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B109618C-F7BF-44B4-A080-4D5FADC6A345}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Corgibytes.ComExample.DataAdapter1Udt</RootNamespace>
-    <AssemblyName>Corgibytes.ComExample.DataAdapter1Udt</AssemblyName>
+    <RootNamespace>Corgibytes.ComUdtWrapperExample.DataAdapter1Udt</RootNamespace>
+    <AssemblyName>Corgibytes.ComUdtWrapperExample.DataAdapter1Udt</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -18,7 +18,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Corgibytes.ComExample.DataAdapter1Udt.xml</DocumentationFile>
+    <DocumentationFile>Corgibytes.ComUdtWrapperExample.DataAdapter1Udt.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
@@ -28,7 +28,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Corgibytes.ComExample.DataAdapter1Udt.xml</DocumentationFile>
+    <DocumentationFile>Corgibytes.ComUdtWrapperExample.DataAdapter1Udt.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
@@ -66,7 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapter.vb" />
-    <Compile Include="DataAdapterOneToken.vb" />
+    <Compile Include="KeyToken.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -104,8 +104,8 @@
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="CollectionFactory">
-      <Guid>{1FF836E2-9BCA-48BD-9552-336624A2CE4A}</Guid>
-      <VersionMajor>1</VersionMajor>
+      <Guid>{D4C4AED0-28D1-4E09-B84F-798CEB812AAC}</Guid>
+      <VersionMajor>2</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>tlbimp</WrapperTool>
@@ -113,7 +113,7 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
     <COMReference Include="DataAdp1Mapper">
-      <Guid>{E250B8FD-22F9-4850-8E84-97388B5E0001}</Guid>
+      <Guid>{98349DFD-B0D0-44E3-A1CE-59708B118CF2}</Guid>
       <VersionMajor>1</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>
@@ -122,8 +122,8 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
     <COMReference Include="DataAdp1Udt">
-      <Guid>{DFB69289-6453-4802-8848-61E5FE82A61D}</Guid>
-      <VersionMajor>1</VersionMajor>
+      <Guid>{62F5FB31-3064-431B-8D9A-E9D534A72755}</Guid>
+      <VersionMajor>2</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>tlbimp</WrapperTool>

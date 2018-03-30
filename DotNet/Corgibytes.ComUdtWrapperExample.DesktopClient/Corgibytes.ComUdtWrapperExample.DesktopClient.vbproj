@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F3DCFE22-CFA2-432D-B603-C596E533518D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>DesktopClient.My.MyApplication</StartupObject>
-    <RootNamespace>DesktopClient</RootNamespace>
-    <AssemblyName>DesktopClient</AssemblyName>
+    <StartupObject>Corgibytes.ComUdtWrapperExample.DesktopClient.My.MyApplication</StartupObject>
+    <RootNamespace>Corgibytes.ComUdtWrapperExample.DesktopClient</RootNamespace>
+    <AssemblyName>Corgibytes.ComUdtWrapperExample.DesktopClient</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -21,8 +21,9 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>DesktopClient.xml</DocumentationFile>
+    <DocumentationFile>Corgibytes.ComUdtWrapperExample.DesktopClient.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,8 +32,9 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>DesktopClient.xml</DocumentationFile>
+    <DocumentationFile>Corgibytes.ComUdtWrapperExample.DesktopClient.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -119,9 +121,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Corgibytes.ComExample.DataAdapter1Udt\Corgibytes.ComExample.DataAdapter1Udt.vbproj">
+    <ProjectReference Include="..\Corgibytes.ComUdtWrapperExample.DataAdapter1Udt\Corgibytes.ComUdtWrapperExample.DataAdapter1Udt.vbproj">
       <Project>{b109618c-f7bf-44b4-a080-4d5fadc6a345}</Project>
-      <Name>Corgibytes.ComExample.DataAdapter1Udt</Name>
+      <Name>Corgibytes.ComUdtWrapperExample.DataAdapter1Udt</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

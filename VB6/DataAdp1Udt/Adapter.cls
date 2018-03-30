@@ -20,7 +20,8 @@ Public Type KeyToken
     ErrorNumber As Long
 End Type
 
-'Example of the ExtractKey method in a data adapter.  Assumes that
+'Example of the ExtractKey method in a data adapter.  Adds the
+'some test KeyTokens to the collection.  Assumes that
 'the collection is not NULL.
 Public Function ExtractKeys(ByRef keys As Collection) As Long
 
